@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-navigation {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+  }
+  .skip-link {
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+  }
+  
+  .skip-link:focus {
+    transform: translateY(-100%);
+  }
+  
+  .skip-link {
+    /* Same as  before */
+    transition: transform 0.3s;
+  }
+body {
+    font-family: 'YourGoogleFont', sans-serif; /* Replace with your chosen Google Font */
+    background-color: #f0f0f0;
+}
+
+nav {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+nav ul {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    background-color: #0066cc;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    line-height: 1.85em;
+    text-indent: 50px;
+    margin-bottom: 25px;
+}
+  
+main section {
+    margin-bottom: 80px;
+}
+
+.material-icons {
+    position: relative; 
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+form button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table caption {
+    font-weight: bold;
+}
+
+slot:not([name]) {
+    display: none;
+  }
+  :host([open]) slot:not([name]) {
+    display: revert;
+  }
+  
+summary {
+    display: list-item;
+    counter-increment: list-item 0;
+    list-style: disclosure-closed inside;
+  }
+:host([open]) summary {
+    list-style-type: disclosure-open;
+}
+  
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Hide Google Material Icons from screen readers */
+.material-icons {
+    position: absolute;
+    left: -10000px;
+}
+
+/* CSS for Skip Navigation */
+.skip-nav {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    z-index: 9999;
+}
+
+.skip-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.skip-nav:hover {
+    top: 0;
+}
+
+/* Hidden Material Icons */
+.material-icons {
+    position: absolute;
+    left: -9999px;
+}
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/lab3.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>GroceryList</title>
+</head>
+<body>
+    <a class = "skip-link" href="#maincontent">Skip to main content</a>
+    <header>
+        <h1>GroceryList</h1>
+    </header>
+    
+    <nav>
+        <h2 class = "main-navigation">Main Navigation</h2>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Groceries">Groceries</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main id="content">
+        <section id = "Home">
+        <h2>Welcome to your grocery checklist</h2>
+        
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+        <section id = "Groceries">
+        <h2>Your Groceries</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="material-symbols-outlined">nutrition</span>Apple</td>
+                    <td>$2</td>
+                </tr>
+                <tr>
+                    <td><span class="material-symbols-outlined">emoji_food_beverage</span>Tea</td>
+                    <td>$4</td>
+                </tr>
+                <tr>
+                    <td><span class="material-symbols-outlined">local_pizza</span>Pizza</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td><span class="material-symbols-outlined">icecream</span>Ice Cream</td>
+                    <td>$5</td>
+                </tr>
+                <tr>
+                    <td><span class="material-symbols-outlined">egg_alt</span>Eggs</td>
+                    <td>$8</td>
+                </tr>
+                <tr>
+                    <td><span class="material-symbols-outlined">local_cafe</span>Coffee</td>
+                    <td>$11</td>
+                </tr>
+                <tr>
+                    <td><span class="material-symbols-outlined">breakfast_dining</span>Bread</td>
+                    <td>$5</td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+        <section id="About">
+            <h2>About Our Grocery List Website</h2>
+            <p></p>
+            <p>Welcome to our grocery list website! We are a team of passionate individuals who understand the importance of efficient shopping and meal planning. Our mission is to make your grocery shopping experience as smooth and convenient as possible.</p>
+            <p>At our core, we believe that a well-organized grocery list can save you time, money, and reduce food waste. Whether you're a seasoned chef or someone just starting in the kitchen, our platform is designed to help you plan your shopping trips with ease.</p>
+            <p>Our website allows you to create, customize, and manage your grocery lists with ease. You can categorize items, set quantities, and even share lists with family members or roommates. We are dedicated to providing a user-friendly and accessible platform that helps you make your grocery shopping more efficient.</p>
+            <p>Thank you for choosing our website to simplify your shopping experience. We look forward to being a part of your grocery planning journey!</p>
+        </section>
+        <section id="Contact">
+            <h2>Contact Us</h2>
+        
+            <p>If you have any questions or need assistance, please don't hesitate to get in touch with us. We're here to help!</p>
+            
+            <details open= "">
+            <div class="faq-item">
+                <h3>FAQ</h3><p>Q: How can I add items to my grocery list?</p>
+                <p>A: To add items to your grocery list, simply log in, go to your Grocery List section, and click "Add Item." You can type the item name, set quantities, and categorize items. Save your changes, and your list is ready for review or sharing!</p>
+            </div>
+            </details>
+        </section>
+        
+    </main>
+    
+    <footer>
+        Site created by Ramy Kassam <address>raka0023@colorado.edu</address>
+      <small>© 2023</small>
+    </footer>
+    
+</body>
+</html>
